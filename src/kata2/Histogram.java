@@ -18,7 +18,7 @@ public class Histogram<T> {
     public T [] getArray(){
         return array;
     }
-    public Map getHistogram(){
+    public Map<T,Integer> getHistogram(){
         Map<T, Integer> histogram  = new HashMap<>();
         for (T i : array) {
             histogram.put(i,histogram.containsKey(i) ? 
